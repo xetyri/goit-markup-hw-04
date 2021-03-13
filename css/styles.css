@@ -9,8 +9,10 @@
   --color-logo: #000000;
   --color-subtext: #757575;
   --color-team: #f5f4fa;
+  --color-icon: #c4c4c4;
   --section-pad: 94px;
   --border-header: #ececec;
+  --border-icon: #afb1b8;
 }
 
 body {
@@ -144,8 +146,8 @@ img {
 }
 
 .tel-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -186,15 +188,46 @@ img {
 }
 
 .mail-link {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
+.navigation-link:hover .mail-img,
+.navigation-link:focus .mail-img,
+.navigation-link:hover .tel-img,
+.navigation-link:focus .tel-img {
+  fill: var(--accent-color);
+}
+
+.mail-img {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--color-subtext);
+}
+
+.tel-img {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--color-subtext);
+}
+
+.block-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ----- END HEADER ----- */
 
 /* ----- HERO ----- */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/index/hero_bg.jpg");
 }
 
 .hero-title {
@@ -248,6 +281,20 @@ img {
   margin-top: 30px;
 }
 
+.icon-img {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+}
+
+.block-icon {
+  background-color: var(--color-team);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
 /* ----- END quality ----- */
 /* ----- work ----- */
 .work {
@@ -313,13 +360,126 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-subtext);
   text-align: center;
+  margin-bottom: 16px;
 }
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-main);
+  fill: var(--border-icon);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--color-main);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* ----- END OUR TEAM ----- */
+
+/* ----- CLIENT ----- */
+.client {
+  padding-top: var(--section-pad);
+  padding-bottom: var(--section-pad);
+}
+
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--border-icon);
+  fill: var(--border-icon);
+  border-radius: 4px;
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.list-icon-one {
+  width: 44px;
+  height: 49px;
+}
+
+.list-icon-two {
+  width: 40px;
+  height: 52px;
+}
+
+.list-icon-three {
+  width: 41px;
+  height: 43px;
+}
+
+.list-icon-four {
+  width: 79px;
+  height: 42px;
+}
+
+.list-icon-five {
+  width: 59px;
+  height: 47px;
+}
+
+.list-icon-six {
+  width: 89px;
+  height: 45px;
+}
+
+/* -----END CLIENT ----- */
 
 /* ----- FOOTER ----- */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--color-main);
+}
+
+.footer-list-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .contact-list-item:not(:last-child) {
@@ -331,6 +491,22 @@ img {
   font-style: normal;
 }
 
+.footer-block-list {
+  margin-top: 12px;
+  margin-left: 70px;
+  width: 206px;
+}
+
+.foot-suptitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-main);
+  margin-bottom: 20px;
+}
+
 .contact-list-link {
   font-weight: 400;
   font-size: 14px;
@@ -339,9 +515,18 @@ img {
   color: var(--color-main);
 }
 
+.footer-list-link:hover,
+.footer-list-link:focus {
+  background: var(--accent-color);
+}
+
 .contact-list-link:hover,
 .contact-list-link:focus {
   color: var(--accent-color);
+}
+
+.footer .container {
+  display: flex;
 }
 
 /* ----- END FOOTER ----- */
