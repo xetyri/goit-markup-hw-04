@@ -146,8 +146,6 @@ img {
 }
 
 .tel-list {
-  padding-top: 27px;
-  padding-bottom: 27px;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -160,6 +158,8 @@ img {
   letter-spacing: 0.02em;
   padding-top: 5px;
   padding-bottom: 5px;
+  display: block;
+  padding: 32px 0;
 }
 
 .navigation-item:not(:last-child) {
@@ -614,10 +614,7 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .gallery-block {
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 19px;
-  margin-bottom: 19px;
+  padding: 19px 24px;
 }
 /* ----- END Main ----- */
 /* ----- END Portfolio ----- */ ;
