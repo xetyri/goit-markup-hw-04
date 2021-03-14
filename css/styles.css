@@ -151,6 +151,11 @@ img {
   margin-left: auto;
 }
 
+.tel-list:hover,
+.tel-list:focus {
+  color: var(--accent-color);
+}
+
 .navigation-link {
   font-weight: 500;
   font-size: 14px;
